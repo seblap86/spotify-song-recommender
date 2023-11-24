@@ -46,9 +46,6 @@ def song_recommender():
     scaler = load(filename="model/7-K17/model_scaler.pickle")
     kmeans_model = load(filename="model/7-K17/model_kmeans.pickle")
     
-    # For testing purposes
-    hot100_df = pd.concat([hot100_df, pd.DataFrame({'title': 'Cruel Summer', 'artist': 'Ace of Base'}, index=[100])])
-    
     # Creating a hot100 lowercase dataframe (saves trouble later on)
     hot100_df_lowercase = hot100_df.copy() 
     for column in hot100_df_lowercase.columns:

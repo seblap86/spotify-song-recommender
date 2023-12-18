@@ -42,10 +42,10 @@ def song_recommender():
 
     # Imports
     hot100_df = pd.read_csv('dfs/hot100_df.csv')
-    df = pd.read_csv('model/7-K17/df_model.csv')
-    scaler = load(filename="model/7-K17/model_scaler.pickle")
-    kmeans_model = load(filename="model/7-K17/model_kmeans.pickle")
-    
+    df = pd.read_csv('model/A2.1-ST45/df_model.csv')
+    scaler = load(filename="model/A2.1-ST45/model_scaler.pickle")
+    kmeans_model = load(filename="model/A2.1-ST45/model_kmeans.pickle")
+
     # Creating a hot100 lowercase dataframe (saves trouble later on)
     hot100_df_lowercase = hot100_df.copy() 
     for column in hot100_df_lowercase.columns:
@@ -117,7 +117,7 @@ def song_recommender():
         search_result_input = sp.search(q=title_input)
         search_result_id = search_result_input['tracks']['items'][0]['id']
         search_result_features = pd.DataFrame(sp.audio_features(search_result_id))
-        y = search_result_features[['acousticness', 'danceability', 'energy', 'instrumentalness', 'liveness', 'speechiness', 'tempo', 'valence', 'duration_ms', 'loudness', 'mode', 'time_signature']]
+        y = search_result_features[['acousticness', 'danceability', 'energy', 'instrumentalness', 'liveness', 'speechiness', 'tempo', 'valence', 'duration_ms', 'loudness']]
 
         y_scaled = scaler.transform(y)
         y_scaled = pd.DataFrame(y_scaled, columns = y.columns)

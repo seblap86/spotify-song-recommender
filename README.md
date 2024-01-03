@@ -1,9 +1,9 @@
+![Cover photo](cover_photo.jpg)
+
 ## SPOTIFY SONG RECOMMENDER
 
 #### Project by Sebastian Bobeth
 Ironhack bootcamp, November 2023
-
-![Cover photo](cover_photo.jpg)
 
 ## PROJECT AIM
 To develop a song recommender by using web scraping / the Spotify API service and modeling with KMeans (unsupervised Machine Learning algorithm).

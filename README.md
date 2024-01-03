@@ -36,7 +36,7 @@ To use or further develop the song recommender, please fork the repo.
 #### Spotify API
 For every usage purpose that engages with Spotify, you will need to configure the Spotify API and place a config.py file with your 'client id' and a 'client secret' in the top level folder. The file has to include no more than the following information to succesfully run the program:
   
-client_id = '(pass your client id)'\n
+client_id = '(pass your client id)'<br>
 client_secret = '(pass your client secret)'
   
 ## ACKNOWLEDGMENT

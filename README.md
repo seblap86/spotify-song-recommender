@@ -12,3 +12,7 @@ The complete procedure was done in Python (Jupyter Notebook). The main focus was
 - Web scraping (beautiful soup)
 - API (spotipy)
 - Machine Learning (KMeans, sklearn)
+
+## ACKNOWLEDGMENT
+Photo by <a href="https://unsplash.com/@davfts?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">David Pupăză</a> on <a href="https://unsplash.com/photos/a-bunch-of-different-colored-pictures-on-a-wall-Km5J-KCP1Mw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  

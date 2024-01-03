@@ -31,7 +31,7 @@ To use or further develop the song recommender, please fork the repo.
 - To use and test the song recommender, please run the 'song_recommender.ipynb' file (this file is basically a clean file that calls up the program).
 - To run the song recommeder with a different model, change the model in the 'song_recommender.py' file.
 - To modify models or train new models, you can build on the 'model_development_and_evaluation.ipynb' file in the 'model' folder.
-- To change, expand or build a new song database, you can build on the dataframes and .ipynb (Jupyter Notebook) files in the 'dfs' folder.
+- To change or expand the song database or build a new one, you can build on the dataframes and .ipynb (Jupyter Notebook) files in the 'dfs' folder.
 
 #### Spotify API
 For every usage purpose that engages with Spotify, you will need to configure the Spotify API and place a config.py file with your 'client id' and a 'client secret' in the top level folder. The file has to include no more than the following information to succesfully run the program:
